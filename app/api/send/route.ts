@@ -16,6 +16,7 @@ export async function POST(request: Request) {
     });
 
     if (error) {
+      console.error('API Error:', error);
       return NextResponse.json({ error }, { status: 500 });
     }
 
