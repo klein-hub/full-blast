@@ -82,6 +82,7 @@ export default function Home() {
     name: '',
     email: '',
     message: '',
+    service: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -114,6 +115,7 @@ export default function Home() {
         name: '',
         email: '',
         message: '',
+        service: '',
       });
 
       alert('Message sent successfully!');

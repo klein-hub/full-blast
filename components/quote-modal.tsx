@@ -36,6 +36,8 @@ export function QuoteModal({ open, onOpenChange }: { open: boolean; onOpenChange
     setIsSubmitting(true);
 
     try {
+      console.log(selectedService);
+      return;
       const response = await fetch('/api/send', {
         method: 'POST',
         headers: {

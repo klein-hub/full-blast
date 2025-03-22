@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone', // ✅ Use standalone, NOT export
+  output: 'standalone',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,11 +9,7 @@ const nextConfig = {
     domains: ['images.unsplash.com'],
   },
   experimental: {
-    appDir: true,
-  },
-  api: {
-    bodyParser: true,
-    externalResolver: true,
+    serverActions: true,
   },
 };
 
