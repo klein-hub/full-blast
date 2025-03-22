@@ -168,18 +168,23 @@ export default function Home() {
         <div className="absolute inset-0">
           {/* Fallback background image */}
           <div className="relative w-full h-screen overflow-hidden">
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="https://peaotjteojnkrzkmtote.supabase.co/storage/v1/object/public/full-blast//4706221_Carrying_Roadway_3840x2160%20(1).mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-     <div className="absolute inset-0 bg-black/60" />
-    </div>
+            <img
+              src="https://peaotjteojnkrzkmtote.supabase.co/storage/v1/object/public/full-blast//9.jpg"
+              alt="Hero background"
+              className="absolute w-full h-full object-cover"
+            />
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="https://peaotjteojnkrzkmtote.supabase.co/storage/v1/object/public/full-blast//4706221_Carrying_Roadway_3840x2160%20(1).mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="absolute inset-0 bg-black/60"></div>
+        </div>
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
           <motion.div
